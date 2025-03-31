@@ -10,15 +10,14 @@ import uk.gov.dwp.uc.pairtest.exception.InvalidPurchaseException;
 import thirdparty.paymentgateway.TicketPaymentService;
 import thirdparty.seatbooking.SeatReservationService;
 
-
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
 
 /**
  * Tests {@link TicketServiceImpl} against all business rules and edge cases.
  * Uses mocking to isolate external services ({@link TicketPaymentService}, {@link SeatReservationService}).
  */
+
 class TicketServiceImplTest {
 
     @Mock

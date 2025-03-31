@@ -37,6 +37,7 @@ public class TicketServiceImpl implements TicketService {
      * Processes a ticket purchase request after validation.
      * @throws InvalidPurchaseException if request violates business rules
      */
+
     @Override
     public void purchaseTickets(Long accountId, TicketTypeRequest... ticketTypeRequests) throws InvalidPurchaseException {
 
@@ -50,7 +51,6 @@ public class TicketServiceImpl implements TicketService {
         seatReservationService.reserveSeat(accountId, totalSeats);
 
     }
-
 
     /**
      * Calculates seats needed (excludes infants as they sit on laps)
